@@ -15,16 +15,23 @@
             right:0;
             z-index:-1;
         }
-        .zyw-share-bg img {
+        .zyw-share-bg-img {
             height:100%;
             width:100%;
             border:0;
+            position: fixed;
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+            z-index:-1;
         }
 	</style>
 </head>
 <body>
-    <div class="zyw-share-bg"><img src="images/bg2.jpg" alt=""></div>
-    <div class="zyw-share-register-new">
+
+    <div class="zyw-share-register-new zyw-share-bg">
+        <img class="zyw-share-bg-img" src="images/bg2.jpg" alt="">
         <form class="mui-input-group mui-input-group-new">
             <div class="mui-input-row mui-input-row-new">
                 <input type="number" placeholder="请输入手机号">
