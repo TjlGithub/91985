@@ -6,10 +6,25 @@
     <title>注册</title>
     <link href="css/mui.css" rel="stylesheet"/>
 	<style type="text/css">
-        body{width: 100%; height: auto; background:url(images/bg2.jpg) #ffcc00 no-repeat top fixed; background-size:cover;}
+        /*body{width: 100%; height: auto; background:url(images/bg2.jpg) #ffcc00 no-repeat top fixed; background-size:cover;}*/
+        .zyw-share-bg{
+            position:fixed;
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+            z-index:-1;
+            text-align:center;
+        }
+        .zyw-share-bg img {
+            height:100%;
+            width:100%;
+            border:0;
+        }
 	</style>
 </head>
 <body>
+    <div class="zyw-share-bg"><img src="images/bg2.jpg" alt=""></div>
     <div class="zyw-share-register zyw-share-register-new">
         <form class="mui-input-group mui-input-group-new">
             <div class="mui-input-row mui-input-row-new">
