@@ -5631,7 +5631,8 @@ color: #999;
 .zywShareRule-new{ width:100%;text-align: center; font-size: 18px; color:#ffcc00; position: absolute; bottom: 103px;}
 .zyw-share-register-new{ background: none; padding: 0; width: 100%; left:0; padding-top: 348px; font-size: 14px;}
 .zyw-share-register-new .mui-input-group{ width:60%; left:20%;}
-.zyw-share-register-new input{ font-size: 12px;}
+@media screen and (max-width: 320px) {.zyw-share-register-new .mui-input-group{ width:70%; left:15%;}}
+.zyw-share-register-new input{ font-size: 12px; padding: 10px 0 10px 15px;}
 .mui-input-group-new{ background: none; }
 .zyw-share-register-new .mui-input-row{ background: #fff; margin-top: 6px;}
 .zyw-share-register-new form .mui-input-row-new{ margin-top:2px; width:100%; height: 36px; line-height: 36px;}
