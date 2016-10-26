@@ -5565,7 +5565,7 @@ color: #999;
 .zyw-share-mask{position:fixed; top:0; left:0; z-index:100; width:100%; height:100%; background:#000; filter:alpha(opacity=70); opacity:0.7; display:none; z-index: 998; }
 .zyw-share-content{ display: none;}
 .zyw-share-main{ width:100%; height: 105px; background: #d2d2d2; z-index: 999; position: fixed; bottom: 43px;  }
-.zyw-share-cancel{ width:100%; display: block; z-index: 999; height:43px; line-height: 43px; background: #fff; text-align: center; position: absolute; bottom: 0; font-size: 18px; color:#000;}
+.zyw-share-cancel{ width:100%; display: block; z-index: 999; height:43px; line-height: 43px; background: #fff; text-align: center; position: fixed; bottom: 0; font-size: 18px; color:#000;}
 .zyw-share-cancel-new:active{ color: #000;}
 .zyw-share-message,.zyw-share-timeline{ float:left; width:50%; text-align: center; padding-top: 16px; font-size: 14px;}
 .zyw-share-message img,.zyw-share-timeline img{ wdith:100%; height: 52px;}
