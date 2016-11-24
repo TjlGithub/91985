@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>邀请好友</title>
+    <link href="css/mui.css" rel="stylesheet"/>
+    <style type="text/css">
+        body{ background: #ffcc00;}
+        .zyw-share-register-wrap,.zywShare-wrap { width: 100%; margin: 0 auto; min-height: 598px; position: relative;background: url(images/bg750.jpg) no-repeat top center;background-size: 100% 100%;}
+        /*@media screen and (max-width: 320px) {.zyw-share-register-wrap,.zywShare-wrap { width: 100%; margin: auto; max-width: 320px; min-height: 540px; position: relative;background: url(images/bg1.jpg) no-repeat top center;}}*/
+    </style>
+</head>
+<body>
+
+    <div class="zywShare-wrap">
+        <a href="##" class="zywShareBtn1-new" onclick="zywShare()">分享</a>
+        <a href="##" class="zywShareRule-new" onclick="zywShareRule()">活动规则 ></a>
+        <div class="zywShare-HB"></div>
+    </div>
+
+    <div class="zyw-share-mask" id="zyw-share-mask"></div>
+    <div class="zyw-share-content"  id="zyw-share-content">
+        <div class="zyw-share-main">
+            <a href="##" class="zyw-share-message">
+                <img src="images/zyw-share-message.jpg" alt="">
+                <br />微信好友
+            </a>
+            <a href="##" class="zyw-share-timeline">
+                <img src="images/zyw-share-timeline.jpg" alt="">
+                <br />朋友圈
+            </a>
+        </div>
+        <a href="##" class="zyw-share-cancel zyw-share-cancel-new" onclick="zywShareCancel()">取消</a>
+    </div>
+
+    <div class="share-rule-wrap" id="share-rule-wrap">
+        <h3>活动规则</h3>
+        <div class="share-rule-height">
+            <p>
+                1、活动时间：2016年月日-2016年月日<br />
+                2、活动时间：2016年月日-2016年月日活动时间2016年月日2016年月日活动时间2016年月日2016年月日<br />
+                3、活动时间：2016年月日-2016年月日<br />
+                4、活动时间：2016年月日-2016年月日<br />
+                5、活动时间：2016年月日-2016年月日<br />
+                6、活动时间：2016年月日-2016年月日<br />
+                7、活动时间：2016年月日-2016年月日<br />
+                 4、活动时间：2016年月日-2016年月日<br />
+                5、活动时间：2016年月日-2016年月日<br />
+                6、活动时间：2016年月日-2016年月日<br />
+                7、活动时间：2016年月日-2016年月日<br />
+                8、活动时间：2016年月日-2016年月日<br />
+                 4、活动时间：2016年月日-2016年月日<br />
+                5、活动时间：2016年月日-2016年月日<br />
+                6、活动时间：2016年月日-2016年月日<br />
+                7、活动时间：2016年月日-2016年月日<br />
+                8、活动时间：2016年月日-2016年月日<br />
+                8、活动时间：2016年月日-2016年月日<br />
+            </p>
+        </div>
+        <a href="##" class="share-rule-btn share-rule-btn-new" onclick="shareRuleCancel()">我知道了</a>
+    </div>
+
+    <script>
+        var shareContent=document.getElementById('zyw-share-content');
+        var shareMask=document.getElementById('zyw-share-mask');
+        var shareRule=document.getElementById('share-rule-wrap');
+        function zywShare() {
+            shareContent.style.display='block';
+            shareMask.style.display='block';
+        }
+        function zywShareCancel() {
+            shareContent.style.display='none';
+            shareMask.style.display='none';
+        }
+        function zywShareRule() {
+            shareRule.style.display='block';
+            shareMask.style.display='block';
+        }
+        function shareRuleCancel() {
+            shareRule.style.display='none';
+            shareMask.style.display='none';
+        }
+    </script>
+</body>
+</html>
