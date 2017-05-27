@@ -1,0 +1,108 @@
+/*全局样式*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Helvetica;
+  text-align: left;
+  color: #000;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+
+/*字体大小*/
+
+.title {
+  font-size: 22px;
+}
+
+[data-dpr="2"] .title {
+  font-size: 44px;
+}
+
+[data-dpr="3"] .title {
+  font-size: 66px;
+}
+
+.font30 {
+  font-size: 15px;
+}
+
+[data-dpr="2"] .font30 {
+  font-size: 30px;
+}
+
+[data-dpr="3"] .font30 {
+  font-size: 45px;
+}
+
+.font36 {
+  font-size: 18px;
+}
+
+[data-dpr="2"] .font36 {
+  font-size: 36px;
+}
+
+[data-dpr="3"] .font36 {
+  font-size: 54px;
+}
+
+
+
+.icon {
+  width: 7em;
+  height: 7em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  color: #FFF;
+  margin-top: 1.4rem
+}
+
+
+.btnWrap{ width: 10rem; height: 8.4rem; position: absolute; top: 50%; left: 50%; margin-top:-4.2rem; margin-left: -5rem;}
+.btn{ width: 80%; height: 1.8rem; line-height: 1.8rem; margin: 0 auto; display: block; border-radius: 10px; padding-left: 2.4rem; margin-bottom: 1.5rem;}
+.btn6bc564{ background: #6bc564;}
+.btnfbd26a{ background: #fbd26a;}
+.btn00aaff{ background: #00aaff;}
+.btn-small{ width: 1rem; height: 1rem; margin-top: 0.44rem; margin-right: 0.3rem;}
+.span-t{ color: #fff;}
