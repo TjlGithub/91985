@@ -80,7 +80,7 @@ ul,ol{list-style-type:none;}
 .wrap img{ width: 10rem; }
 .wrap ul{ width: 8.61rem; margin: 0 auto;}
 .wrap ul li{ width: 2rem; margin: 0.5rem .43rem; float:left;}
-.wrap ul li a{ display: block; width: 2rem; text-align: center; color: #666;}
+.wrap ul li a{ display: block; width: 2rem; text-align: center; color: #666; text-decoration: none;}
 .icons{ width: 1.76rem; height: 1.76rem; border-radius: 100%; display: block; margin: 0 auto; margin-bottom: .27rem;}
 .icon1{ background: #4bbafc;}
 .icon2{ background: #3cbe9f;}
