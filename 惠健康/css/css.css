@@ -110,3 +110,4 @@ ul,ol{list-style-type:none;}
 .icons-index i{ font-style: normal; color: #fff; display: block;}
 .icons-index .icon{ width: 0.9rem; height: 0.9rem; margin-top: 0;}
 .myjt li .icon1,.myjt li a .icon2,.myjt li a .icon3,.myjt li a .icon4,.myjt li a .icon5,.myjt li a .icon6{ box-shadow: none;}
+.foot{ width: 100%; height: 2.35rem; position: absolute; bottom: 0; left: 0;}
