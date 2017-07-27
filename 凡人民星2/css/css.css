@@ -384,3 +384,5 @@ input[type=radio]:checked:after {
   border-color: #099414;
   background-color: #099414;
 }
+
+.tips{ width: 90%; line-height: 46px; margin: 0 auto; text-align: left; color: #fff; margin-bottom: 30px; font-weight: bold;}
