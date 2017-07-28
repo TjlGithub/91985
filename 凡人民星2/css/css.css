@@ -195,10 +195,6 @@ div {
   height: 100%;
 }
 
-video {
-  width: 603px;
-  height: 4.75rem;
-}
 
 .video {
   width: 8.04rem;
@@ -252,6 +248,7 @@ video {
   text-decoration: none;
   font-weight: bold;
 }
+.btn2{background: #666;}
 
 .tip {
   color: #fff;
@@ -387,4 +384,8 @@ input[type=radio]:checked:after {
 
 .tips{ width: 90%; line-height: 46px; margin: 0 auto; text-align: center; color: #fff; margin-bottom: 30px; font-weight: bold; color: red;}
 
-.tips2{text-align: left;}
+.tips2{text-align: left; line-height: 56px;}
+
+.submit-tips{ display: block; margin-top: 8px;}
+
+.tg{ display: none;}
