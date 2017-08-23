@@ -1,0 +1,628 @@
+/*==全局样式==*/
+*{padding:0;margin:0;}
+div,dl,dt,dd,form,h1,h2,h3,h4,h5,h6,img,ol,ul,li,table,th,td,p,span,a{border:0;}
+img,input{border:none;vertical-align:middle;}
+body{font-family:Tahoma,Arial,Helvetica,"微软雅黑";font-size:12px;text-align:left;background:#FFF;color:#202020;}
+html{overflow-y:scroll;}
+ul,ol{list-style-type:none;}
+th,td,input{font-size:12px;}
+h3{font-size:14px;}
+button{border:none;cursor:pointer;font-size:12px;background-color:transparent;}
+select{border-width:1px;_zoom:1;border-style:solid;padding-top:2px;font-size:12px;}
+.clearfix:after{content:".";display:block;height:0;visibility:hidden;clear:both;}
+.clearfix{zoom:1;}
+a{transition: all 0.5s ease;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;}
+a:link,a:visited{text-decoration:none;color:#202020;}
+a:hover,a:active{text-decoration:none;color:#377bee;}
+.fl{ float:left;}
+.fr{ float:right;}
+
+
+/*助医网首页2016*/
+.topBg{ width:100%; height: 30px; line-height: 30px; background: #f1f1f1;}
+.top{ width:1210px; margin:0 auto;}
+.top .fl{ text-indent: 2px;}
+.header{ width:1210px; margin:0 auto; position: relative;}
+.logo{ width:184px; height: 54px; margin: 26px 0 0 2px; background: url("../images/pic.png"); background-position: 0 0;}
+.search{ margin: 25px 0 0 213px; *margin: 25px 0 0 101px;  position: relative;}
+.search-content{width:375px; height: 38px; line-height: 38px; border:3px solid #00be86; border-radius: 5px; text-indent: 8px; outline: none;}
+/*.search-btn{ background: #00be86; width:86px; height: 44px; display: block; border-radius: 5px; margin-left:-6px;}*/
+/*.search .search-btn{ color:#fff; font-size: 14px; line-height: 42px; text-indent: 39px;}*/
+.search-button{ width: 86px; height: 44px; line-height: 44px; background: #00be86; border-radius: 5px; margin-left: -6px; color: #fff; font-size: 14px; font-family: "Microsoft YaHei"; text-indent: 10px; cursor: pointer; outline: none;}
+.search-icon{width: 18px; height: 18px; background: url("../images/pic.png"); background-position: 0 -54px; position: absolute; top:12px; right:58px;}
+.search .hot{ padding-left: 11px; *clear:both; *padding-left: 104px;}
+.search .hot a{ padding: 0 4px; color: #999; line-height: 24px; }
+.search .hot a:hover{ color: #377bee;}
+.search .hot .keyWord{ color:#fa9655;}
+.slogon{ background:url("../images/pic.png"); width:299px;height:46px;background-position:0 -118px; margin: 34px 0 0 50px;}
+.nav{margin:23px 0 0 281px; *clear: both;}
+.nav ul li { float:left; margin: 0 34px; text-align: center;}
+.nav ul li a{ font-size: 15px; color: #202020;}
+.nav ul li a:hover{ color:#00be86;}
+.nav ul li .current{ color:#00be86;}
+
+.registration{ width:260px; height: 392px; position: absolute; left:0; top:106px; top:104px\0; z-index: 999;}
+.registration-title{ width:260px; height: 42px; line-height: 42px;  background: #00be86; color:#fff; font-size: 15px; text-indent: 19px; }
+.registration-main{ width:260px; padding-left: 30px; width: 230px!important; height: 350px; padding-top: 40px; height: 310px!important; background:rgba(255,255,255,0.8)!important; background: #fff; filter:alpha(opacity=80); *margin-top: 2px; }
+.registration-main form,.registration-main a,.registration-main .registration-img{ position: relative;}
+.registration-main p{ font-size: 16px; color: #272727; }
+.registration-main input{ width: 200px; height: 36px; line-height: 36px; background: #fff; color:#646464; font-size: 15px; text-indent: 10px;  margin-bottom: 28px; margin-top: 4px; *margin-left: -10px;}
+/*.registration-main .registration-btn{ width: 120px; height: 40px; display: block; margin:8px 0 0 40px; font-size: 18px; color: #fff; text-align: center; line-height: 40px; background: #fc8026;}*/
+.registration-main .registration-button{ width: 120px; height: 40px; margin: 8px 0 0 40px; font-size: 18px; color: #fff; line-height: 40px; background: #fc8026; cursor: pointer; outline: none; text-indent: 0px;}
+.registration-img{ width:213px; height: 40px; background: url("../images/pic.png"); background-position: 0 -165px; margin-top: 44px; margin-top: 48px\0;}
+
+.fullSlide{ min-width:1000px; border-top:2px solid #00be86; border-bottom:2px solid #00be86; position:relative;  height:350px; overflow:hidden; margin-top: 10px; *margin-top: -15px; *z-index: -1;}
+.fullSlide .bd{ position:relative; z-index:0;  }
+.fullSlide .bd ul{ width:100% !important; }
+.fullSlide .bd li{ width:100% !important;  height:350px; }
+.fullSlide .bd li a{ position:absolute; width:100%; height:350px; display:block; z-index:1;;   }
+.fullSlide .hd{ width:100%;  position:absolute; z-index:1; bottom:0; left:0; height:30px; line-height:30px; text-align:center; }
+.fullSlide .hd ul li{ cursor:pointer; display:inline-block; *display:inline; zoom:1; width:11px; height:11px; margin:4px; background:url("../images/dot-black.png") 0 0; overflow:hidden; line-height:9999px; filter:alpha(opacity=40);opacity:0.4;}
+.fullSlide .hd ul .on{ filter:alpha(opacity=100);opacity:1;  }
+
+.sidebar{ width: 39px; height: 100%; background: rgba(0,0,0,0.7)!important; background: #333; position: fixed; top: 0; right:0; z-index: 999;}
+.sidebar ul{ margin-top:422px;}
+.sidebar ul li{ width: 39px; height: 52px;}
+.sidebar ul li a{ display:block; width: 39px; height: 52px; position: relative; text-align: center; vertical-align: middle;transition-duration: 0s;}
+.sidebar ul li a:hover{ background: #377bee;}
+.sidebar-app img{width: 22px; height: 33px; margin-top: 9px; }
+.sidebar-weixin img{width: 30px; height: 25px; margin-top: 13px; }
+.sidebar-phone img{width: 28px; height: 28px; margin-top: 12px; }
+.sidebar-service img{width: 29px; height: 29px; margin-top: 11px;}
+.sidebarAppShow{ width:140px; height: 208px; height: 204px!important; background: #377bee; position: absolute; top:0px; left:-140px; display: none; padding-top: 4px;}
+.sidebarWeixinShow{ width:140px; height: 208px; background: #377bee; position: absolute; top:-52px; left:-140px; display: none;}
+.sidebarPhoneShow{ width:140px; height: 208px; height: 207px!important; background: #377bee; position: absolute; top:-104px; left:-140px; display: none; padding-top: 1px;}
+.sidebarPhoneShow h2{ color: #fff;}
+.sidebarServiceShow{ width:140px; height: 208px; background: #377bee; position: absolute; top:-156px; left:-140px; display: none;}
+.sidebar-app:hover .sidebarAppShow{ display:block;}
+.sidebar-weixin:hover .sidebarWeixinShow{ display:block;}
+.sidebar-phone:hover .sidebarPhoneShow{ display:block;}
+.sidebar-service:hover .sidebarServiceShow{ display:block;}
+.sidebarAppShow img,.sidebarWeixinShow img,.sidebarPhoneShow img,.sidebarServiceShow img{ width: 126px; height: 126px; margin-bottom: 4px; }
+.sidebarAppShow p,.sidebarWeixinShow p,.sidebarPhoneShow p,.sidebarServiceShow p{ color:#fff; font-size: 12px; text-align: center; line-height: 18px; }
+
+.icon-six{ width: 100%; height:127px; background: #f7f7f7;}
+.icon-six-main{ width: 1284px; width: 1263px !important; margin: 0 auto; padding-left: 21px; *padding-left: 0px; overflow: hidden;}
+.icon-six-main ul li{ width: 181px; height: 60px; border-right:1px solid #c9c8c8; float: left; margin:0 14px; margin-top: 32px; position: relative; text-align: center; }
+.icon-six-main ul li a{ display: block; }
+.icon-six-main ul li a>div{ *margin-left: -120px;}
+.icon-six-01{ width: 60px; height: 60px; background: url("../images/pic.png"); background-position: 0 -205px;}
+.icon-six-02{ width: 60px; height: 60px; background: url("../images/pic.png"); background-position: -60px -205px;}
+.icon-six-03{ width: 60px; height: 60px; background: url("../images/pic.png"); background-position: -120px -205px;}
+.icon-six-04{ width: 60px; height: 60px; background: url("../images/pic.png"); background-position: -180px -205px;}
+.icon-six-05{ width: 60px; height: 60px; background: url("../images/pic.png"); background-position: -240px -205px;}
+.icon-six-06{ width: 60px; height: 60px; background: url("../images/pic.png"); background-position: -300px -205px;}
+.icon-six-main ul li p{ font-size: 18px; color: #1b1b1b; position: absolute; top:9px; left: 70px; }
+.icon-six-main ul li span{ font-size: 14px; color: #6e6e6e; position: absolute; top:34px; left:70px;}
+
+.footer{ margin-top: 39px;}
+.foot{ width: 100%; height: 54px; line-height: 54px; text-align: center; background:#f0eeef; }
+.foot a{ font-size: 14px; color:#666; padding: 0 26px;}
+.foot a:hover{ color: #377bee;}
+.footer p{ font-size: 14px; text-align: center; line-height: 24px; color: #999; margin-top: 5px;}
+.friendLink{ width: 760px; margin: 10px auto;}
+.friendLink a{ width: 123px; float: left; margin: 0 65px;}
+.friendLink a span{ display: block;width: 123px; height: 57px; background: url("../images/pic.png"); }
+.friendLink .friendLink01{background-position: 0 -325px;}
+.friendLink .friendLink02{background-position: 0 -381px; }
+.friendLink .friendLink03{background-position:0 -437px;}
+.friendLink a p{ color: #666;}
+
+/*css3*/
+/* Forward */
+.hvr-forward {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+}
+/* Float */
+.hvr-float {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+
+
+/*站长统计20161216*/
+.footer .statistics{ display: block; color: #111; text-align:center; font-size: 16px; margin: 10px 0 20px 0;}
+
+
+
+/*上海医保20170217*/
+	/*bootstrap&css冲突*/
+.sidebar li div >p{margin: 0;}
+.sidebarPhoneShow h2{ font-size: 18px; margin:0;}
+.sidebarAppShow,.sidebarPhoneShow{ height: 208px!important; }
+.registration-main{ width: 260px!important;}
+.registration2 { height: 414px; }
+.search-content { width: 381px; height: 44px;}
+.container-fluid{ padding: 0;}
+body p{ font-size: 16px;}
+.sidebar{ z-index: 9999;}
+
+	/*侧边栏适配修正*/
+.sidebar{ padding-top: 29.65%;}
+.sidebar ul { margin-top: auto;}
+
+	/*快速挂号隐藏显示*/
+.registration-main2 { background: rgba(243,249,247,1)!important; background: #f3f9f7; filter: alpha(opacity=100); height: 372px!important; display: none;}
+.registration2{ z-index: 1001;}
+
+	/*上海医保*/
+.shyb-wrap{ width: 1210px; margin: 0 auto; margin-top: 10px; padding-top: 6px; z-index: 1000; position: relative; border-top: 2px solid #00be86;}
+.shyb-wrap p{ line-height: 34px;}
+.shyb-wrap h4{ color: #00be86; }
+.shyb-wrap h4>span{ color: rgb(32, 32, 32); line-height: 24px;}
+.shyb-wrap .shyb-disabled{ color: #a9a9a9; font-weight: bold;}
+.shyb-wrap .shyb-onGreen{ color: #00be86;}
+.shyb-wrap .media-left img{ width: 272px;  border: 1px solid #ccc;}
+.shyb-wrap .media-heading{ color: #FA9655; border-bottom: 2px solid #f3f3f3; line-height: 34px; font-weight: bold;}
+.shyb-wrap .shyb-logo{ width: 30px;}
+.shyb-wrap .shyb-tab{ margin-left: 0;}
+.shyb-wrap .nav-tabs > li{ font-weight: bold;}
+.shyb-wrap .nav-tabs > li > a{ font-size: 16px;}
+.shyb-wrap .nav-tabs > li.active > a, .shyb-wrap .nav-tabs > li.active > a:hover, .shyb-wrap .nav-tabs > li.active > a:focus{ color:#00be86 ;}
+.shyb-btn{ background-color: #FA9655;  border-color: #FA9655; margin-left: 88px; padding-top: 8px; padding-bottom: 8px;}
+.shyb-btn2{ margin-left: 88px; padding-top: 8px; padding-bottom: 8px;}
+.panel-default > .shyb-on{ background: #FA9655; border: 1px solid #FA9655; border-radius: 10px;}
+.panel-group .panel{border-radius: 10px;}
+.panel-default > .shyb-on a{ color: #fff;}
+.FA9655:link{ color: #FA9655;}
+.panel-default  a{ font-weight: bold;}
+
+
+
+/*健康顾问卡20170303*/
+.health-dropdown{ width: 100px;padding-bottom: 10px;  position: absolute; z-index: 999999; right: 77px; top: 146px; display: none; background: #00be86;}
+.health-dropdown ul{ list-style-type: none;}
+.health-dropdown ul li{ width: 100px; margin: 0; text-align: center; height: 35px; line-height: 35px;}
+.health-dropdown ul li a{ color: #fff; font-size: 13px;}
+.health-dropdown ul li a:hover{ color: #fff;}
+#healthControl{ font-size: 15px; display: block; padding: 10px 20px; margin: -10px -20px ; cursor: pointer;}
+#healthCardC p{ font-size: 14px; line-height: 24px;}
+#healthCardC .nav-tabs > li > a{ font-size: 14px;}
+.healthControl-bg{ animation: healthControlBg .4s;background: #00BE86; color: #fff;}
+@keyframes healthControlBg{	from{background: #fff;}	to{background:#00be86 ;}}
+/* Buzz Out */
+@-webkit-keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+@keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+.hvr-buzz-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-buzz-out:hover, .hvr-buzz-out:focus, .hvr-buzz-out:active {
+  -webkit-animation-name: hvr-buzz-out;
+  animation-name: hvr-buzz-out;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+/*箭头
+.arrow-down { position: relative; z-index: 99999999; top: -12px; right: -33px;}
+.arrow-down:after {
+  border: 5px solid transparent;
+  border-top: 5px solid #00be86;
+  width: 0;
+  height: 0;
+  position: absolute;
+  content: '';
+}
+.arrow-down2{ position: relative; z-index: 99999999; top: -17px; right: -33px;}
+.arrow-down2:after{  animation: arrowchange .4s; -moz-animation: arrowchange .4s;border: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  width: 0;
+  height: 0;
+  position: absolute;
+  content: '';
+}
+@keyframes arrowchange{
+	from{
+  border: 5px solid transparent;
+  border-top: 5px solid #00be86;
+  width: 0;
+  height: 0;
+  position: absolute;
+  content: '';}
+	to{
+		border: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  width: 0;
+  height: 0;
+  position: absolute;
+  content: '';}
+}
+@-moz-keyframes arrowchange{
+	from{
+  border: 5px solid transparent;
+  border-top: 5px solid #00be86;
+  width: 0;
+  height: 0;
+  position: absolute;
+  content: '';}
+	to{
+		border: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  width: 0;
+  height: 0;
+  position: absolute;
+  content: '';}
+}*/
+.healthCard-wrap{ width: 1210px; margin: 0 auto; margin-top: 10px; padding-top: 6px; z-index: 1000; }
+.healthCard-wrap .caption{ padding-top: 15px; color: #666;}
+.healthCard-wrap .caption h3{ width: 200px; line-height: 20px; margin: 10px 0;}
+.healthCard-wrap .caption .healthCardlabel{ padding: 10px 22px; font-size: 15px;}
+.healthCard-wrap .caption .healthCardSpan{ margin-top: 20px; display: block;}
+.healthCard-wrap .caption .healthCardSpan i{ font-style: normal; color: #d9534f;}
+.healthCard-wrap .caption .healthCardSpan strong{ font-size: 16px; color: #d9534f;}
+.healthCard-wrap .caption .btn{ color: #fff;}
+/* Grow Shadow */
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.healthCardPrice{ font-size: 16px; margin-top: -15px;}
+.healthCardPrice i{ color:#d9534f ; font-style: normal;}
+.healthCardPrice span{ color: #d9534f; font-size: 36px; }
+.healthCardSales { display: inline-block; color: #999; margin-left: 30px;}
+.healthCardSales em{ color: #00be86; font-style: normal;}
+.healthCardBtn{ margin:15px 30px 0 0;}
+.shyb-wrap .media-left .healthCardImg{ width: 412px; height: 248px; border: none;}
+.healthCardNum #min,.healthCardNum #add,.healthCardNum #quantity{ width: 26px; height: 26px; background: #fff; border: 1px solid #ddd; outline: none; text-align: center;}
+.healthCardNum #quantity{ width: 46px; height: 26px; margin: 0 -5px;}
+.healthCardNum{ margin-top: 5px;}
+.healthCardNav li a:hover{ color: #202020;}
+
+	/*购物车*/
+.sidebar .shopCart{ height: 145px; margin-bottom: 6px; border-top: 1px solid #a1a1a1; border-bottom: 1px solid #a1a1a1; width: 33px; margin: 0 auto; padding: 20px 0; margin-top: -145px;}
+.shopCart .message{ display: block; width: 20px; height: 20px; margin:0 auto 6px; background: url(../images/healthCard/shopCart.png);}
+.sidebar ul li .message_list{ height: 145px; color: #FFF; margin-left: -3px;}
+.sidebar ul li .message_list:hover{ background: none;}
+.sidebar ul li .message_list .cart_num{ display: block; width: 20px; height: 20px; margin: 6px auto 0; background: red; border-radius: 50%;}
+#flyItem{position:absolute;visibility:hidden; margin:-240px 0 0 -10px;}
+.sidebar .quick_links{ width: 39px; position: absolute;}
+
+	/*我的购物车页面*/
+.step-box {padding: 10px 0 10px 35px; text-align: center;}
+.step-box ul li { float: left; width: 379px; line-height: 40px;}
+.step-one { color: #fff;}
+.step-one p { float: left; width: 344px; text-align: center; font-size: 16px; line-height: 40px; background-color: #00BE86;}
+.step-one span { float: left; display: inline-block; height: 40px; width: 35px; background: url(../images/healthCard/cartboxnav.png) center no-repeat;}
+.step-two p { float: left; width: 342px; line-height: 40px; background-color: #f3f3f3;}
+.step-two span { float: left; display: inline-block; height: 40px;  width: 37px;  background: url(../images/healthCard/cartboxnav-4.png) center no-repeat;}
+.step-three p { float: left; width: 379px; line-height: 40px; background-color: #f3f3f3;}
+.model-two .step-one p { background-color: #F1FBF9; color: #00BE86; width: 345px;}
+.model-two .step-one span { background: url(../images/healthCard/cartboxnav-1.png) center no-repeat; width: 34px;}
+.model-two .step-two p { background-color: #00BE86; color: #FFFFFF; width: 344px;}
+.model-two .step-two span { background: url(../images/healthCard/cartboxnav.png) center no-repeat; width: 35px;}
+.model-three .step-one p { background-color: #F1FBF9; color: #00BE86; width: 342px;}
+.model-three .step-one span { background: url(../images/healthCard/cartboxnav-5.png) center no-repeat; width: 37px;}
+.model-three .step-two p { background-color: #F1FBF9; color: #00BE86; width: 345px;}
+.model-three .step-two span { background: url(../images/healthCard/cartboxnav-1.png) center no-repeat; width: 34px;}
+.model-three .step-three p { background-color: #00BE86; color: #FFFFFF; width: 379px;}
+
+.catbox .checkbox{ margin-top: -1px;}
+.catbox .checkbox input[type="checkbox"]{ margin: 30px 0 0;}
+.catbox .goods img{ width: 120px;}
+.catbox .goods span{ margin-left: 10px;}
+.catbox tr th label{ margin: 0;}
+.catbox .check-all{ margin-top: -3px;}
+.catbox .price,.catbox .subtotal,.catbox .operation ,.catbox .count{padding-top: 35px;}
+.catbox .subtotal { color: red; font-weight: bold;}
+.catbox .operation .delete{ cursor: pointer;}
+.catbox .count .reduce,.catbox .count .add{ width: 26px; height: 26px; cursor: pointer;border:1px solid #e5e5e5;background:#f0f0f0;text-align:center;line-height:23px;color:#444;}
+.count .add, .count input, .count .reduce{float:left;position:relative;z-index:0;}
+.catbox .count .count-input{ width: 35px; height: 26px; text-align: center; border: 1px solid #d1d1d1; border-left: none; border-right: none; }
+.catboxfoot{ width: 100%; height: 50px; line-height: 50px; background: #f1f1f1;}
+.catboxfoot .delete{ color: #999; margin-left: 9px;}
+.catboxfoot .total{ height: 50px; line-height: 50px;}
+.catboxfoot .total i{ font-style: normal; color: red;}
+.catboxfoot #priceTotal{ font-size: 30px; color: red;}
+.catboxfoot .closing{ width: 120px; height: 48px; line-height: 48px; text-align: center; background: #00be86; margin-left: 15px; color: #fff;}
+
+.cardOrder .more-box { float: left; height: 120px; width: 120px; border: 1px solid #EEEEEE; text-align: center; padding: 5px 0;
+cursor: pointer; color: #999; margin-top: -10px;}
+.cardOrder i{ font-style: normal;font-size: 30px;}
+.contactInformation form label{ color: #666;}
+.contactInformation form .text-left{ text-align: left; font-weight: normal;}
+.cardInvoice .panel-body label{ color: #666;}
+.cardInvoice .panel-body label input{margin-top: -3px;}
+.cardInvoiceInfo .btn-default.active{ background: #00be86; color: #FFF; border: 1px solid #00be86;}
+.cardInvoiceInfoDisplay{ display: none;}
+.contactInformation #in-sync{ cursor: pointer; color: #377BEE;}
+.contactInformation #in-sync:hover{ color: red;}
+
+.total-section .detail-box {background-color: #fffbf6; border: 1px solid #F5E3CD; border-bottom: none; padding: 15px 50px; text-align: right;}
+.total-section .detail-box p { line-height: 30px; font-size: 12px;}
+.total-section .detail-box p span.red { color: red;}
+.total-section .btn-box { height: 50px; border: 1px solid #EEEEEE; background-color: white;}
+.total-section .btn-box p { float: right; margin-right: 35px;}
+.total-section .btn-box p span { font-size: 12px; line-height: 50px; color: #666666;}
+.total-section .btn-box p span .red { color: red; margin-left: 5px;}
+.total-section .btn-box p .bigTex { font-size: 24px; color: red;}
+.total-section .btn-box a { float: right; display: block; width: 220px; height: 50px; line-height: 50px; background-color: #00BE86;
+  color: white; text-align: center; font-size: 16px;}
+
+.cardOrder .pay-way { position: relative; display: inline-block; margin-right: 10px; width: 120px; height: 40px; line-height: 38px;
+  text-align: center; font-size: 12px; color: #666666; border: 1px solid #dddddd; font-weight: normal; margin-left: 10px;}
+.cardOrder .CardADcur .way-active { border: 1px solid #00BE86;}
+.cardOrder .CardADcur .way-active:after { content: ""; position: absolute; z-index: 3; right: 0; bottom: 0; width: 20px; height: 20px;
+  background: url("../images/healthCard/check-after.png") no-repeat right bottom;}
+.cardOrder .way-active2 { border: 1px solid #00BE86;}
+.cardOrder .way-active2:after { content: ""; position: absolute; z-index: 3; right: 0; bottom: 0; width: 20px; height: 20px;
+  background: url("../images/healthCard/check-after.png") no-repeat right bottom;}
+
+.cardInvoiceNewAD{ width: 100%; margin-top: 5px; padding: 5px;}
+.cardInfoRed{ color: red;}
+.cardInfoDefault{ margin-right: 5px;}
+.cardInfoDefault input{ margin-top: -3px;}
+.cardDefaultAdress .pay-way { width: 240px; height: 120px; cursor: pointer;}
+.cardDefaultAdress-1 p{ border-bottom: 1px solid #ddd; font-size: 14px; text-align: left; text-indent: 20px;}
+.cardDefaultAdress-1 p span{ background: #fc9a0e; color: #fff; display: none; width: 40px; height: 20px; line-height: 20px; text-align: center; text-indent: 0; float: left; margin-top: 7px;}
+.CardADcur .cardDefaultAdress-1 p span{ display: block; margin-left: 3px;}
+.cardDefaultAdress-1 p a{ font-weight: normal; color: #377BEE; float: right; margin-right: 20px;}
+.cardDefaultAdress-1 p a:hover{ color: red;}
+.cardDefaultAdress-1 p em{ font-style: normal;}
+.cardDefaultAdress-1 strong,.cardDefaultAdress-1 i{ display: block; font-style: normal; text-align: left; font-size: 14px; line-height: 24px; text-indent: 20px; font-weight: normal;}
+
+.info-section { padding: 25px 25px 20px; background-color: white; border: 1px solid #eeeeee;}
+.info-section h5 { font-size: 20px; font-weight: normal; color: #00BE86; line-height: 20px; margin-bottom: 25px;}
+.info-section .info-price { color: #666666; margin-bottom: 10px; font-size: 14px;}
+.info-section .info-cancel { color: #98989f; font-size: 14px;}
+.info-section .info-cancel span { color: #666666;}
+.info-total { background-color: #fffaf4; padding: 0 25px; line-height: 55px; text-align: right; border: 1px solid #eeeeee;  border-top: none;  margin-bottom: 15px;}
+.info-total .orange {font-size: 18px; color: red;}
+
+.online-way { padding: 20px 25px 25px;  border: 1px solid #eeeeee;}
+.online-way h6 { font-size: 14px; color: #666666; margin-bottom: 25px;}
+.online-way .online-box { margin-left: 55px;}
+.online-way .online-box div { float: left; position: relative; cursor: pointer; height: 45px; width: 180px;  border: 1px solid #eeeeee; margin-right: 20px; background: url("../images/healthCard/online-way.png") no-repeat;}
+.online-way .online-box div .check-icon { display: block; position: absolute; z-index: 2; height: 43px; width: 178px;  left: 0;  top: 0;  background: url("../images/healthCard/check-after.png") no-repeat right bottom;}
+.online-way .online-box .way-on { border: 1px solid #00BE86;}
+
+.next-section { text-align: center; padding: 25px 0; margin-bottom: 15px; background-color: white; border: 1px solid #eeeeee; margin-top: 14px;}
+.next-section .next-btn { display: inline-block; width: 160px; height: 40px; line-height: 40px; color: white; background-color: #EEEEEE; font-size: 16px; border-radius: 3px;}
+.next-section .able {background-color: #00BE86;}
+
+
+/*便捷就医直通车20170310*/
+ .directCarContainer{ width: 1000px; padding: 0;}
+.directCar{ font-family: "微软雅黑";}
+.directCar .col-md-3{ width: 244px;  margin: 3px;}
+.directCar h4{ font-size: 14px; color: #666;}
+.directCar p{ font-size: 12px; color: #999;}
+.directCar p span{ color: #efa30a;}
+.directCar .goodAt{ text-align: left; border-top: 1px dashed #ddd;padding-top: 8px;}
+.directCarTop{ width: 1000px;}
+.directCarTop label{ font-size: 14px; font-weight: normal; color: #666; text-align: right; line-height: 34px;}
+.directCar .thumbnail{transition: all 1s ease;}
+.directCar .thumbnail:hover{border: 1px solid #377bee;  }
+
+	/* Shadow */
+.hvr-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+.hvr-shadow:hover, .hvr-shadow:focus, .hvr-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+}
+
+
+/*健康顾问卡   服务优势&常见问题 优化20170406*/
+.FuWuYouShi li{ margin: 28px 0;}
+.FuWuYouShi li img{ width: 55px; float: left; }
+.FuWuYouShi li h3{ font-size: 18px; color: #434343; line-height: 36px; text-indent: 8px;}
+.GouMaiFangShi li{ border-bottom: 1px dashed #ddd; padding: 10px 0;}
+.GouMaiFangShi li h3{ font-size: 18px;}
+.GouMaiFangShi li h4{ font-size: 16px; text-indent: 30px; color: #377bee;}
+.GouMaiFangShi li h5{ font-size: 14px; text-indent: 30px;}
+
+.common-question li{ width: 100%; border-bottom: 1px dashed #D7E1D4; padding: 25px 0 16px;}
+.common-question li .question-icon{ width: 25px; height: 25px; line-height: 25px; text-align: center; color: #FFFFFF; background: #00be86; border-radius: 5px; margin-right: 15px;}
+#healthCardC .common-question li .question-mian p{ color: #00BE86; font-size: 16px; }
+#healthCardC .common-question li .question-mian p.fl{ color: #202020; margin-left: 8px;}
+.common-question li .question-mian span{ font-size: 16px;}
+
+
+
+
+
+/*首页调整20170526*/
+.health-dropdown{ right:559px;}
+.icon-six-main ul{ padding-top: 32px;}
+.icon-six-main ul li{ width: 286px; border:none; margin-top: 0; margin-bottom: 32px;}
+.icon-six-main ul li a{ width: 182px; margin-left: 68px;}
+.icon-six{ height: auto;}
+.footer{ margin-top: 19px;}
+.icon-six-07{ width: 60px; height: 60px; background: url("../images/pic.png"); background-position: -60px -265px;}
+.icon-six-08{ width: 60px; height: 60px; background: url("../images/pic.png"); background-position: -120px -265px;}
+
+
+
+
+/*首页新增广告位20170615*/
+.icon-six-06{ width: 60px; height: 60px; background: url("../images/pic.png"); background-position: -300px -265px;}
+.ad { width: 1224px; margin: 0 auto;}
+.ad ul li { float: left; width: 596px; height: 100px; margin:6px; background: #333; overflow: hidden;}
+.icon-six-main{ padding-left: 0;}
+.icon-six-main ul { padding-top: 16px;}
+.guangshu { display:block; position: relative; width:596px; height:100px; margin:0 auto;}
+.guangshu:before { content: ""; position: absolute; width:200px; height: 100%; top: 0; left: -224px; overflow: hidden;
+background: -moz-linear-gradient(left, rgba(255,255,255,0)0, rgba(255,255,255,.2)50%, rgba(255,255,255,0)100%);
+background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(50%, rgba(255,255,255,.2)), color-stop(100%, rgba(255,255,255,0)));
+background: -webkit-linear-gradient(left, rgba(255,255,255,0)0, rgba(255,255,255,.2)50%, rgba(255,255,255,0)100%);
+background: -o-linear-gradient(left, rgba(255,255,255,0)0, rgba(255,255,255,.2)50%, rgba(255,255,255,0)100%);
+-webkit-transform: skewX(-25deg);
+-moz-transform: skewX(-25deg)
+}
+.guangshu:hover:before { left: 150%; transition: left 1s ease 0s; }
+
+
+
+/*健康保险新页面20170822*/
+.baoxian-fullSlide{ border-bottom: none;}
+.baoxian{ width: 1200px;  margin: 10px auto;}
+.mall-dropdown{ right:431px;}
+
+.baoxian-slideTxtBox{ width:1200px; text-align:left; margin-top: -40px; position: relative; z-index: 998;}
+.baoxian-slideTxtBox .hd{ height:80px; background:#fd9e59; border-radius: 5px; overflow: hidden;}
+
+.baoxian-slideTxtBox .hd ul li{width: 600px; height:80px; line-height: 80px; float:left; cursor:pointer; text-align: center; color: #fff; font-size: 18px; }
+.baoxian-slideTxtBox .hd ul li.on{  color: #fff; background: #fc8026;}
+
+.baoxian-slideTxtBox .bd ul{margin-top: 10px;}
+.baoxian-slideTxtBox .bd li{ width: 283px; float: left; border:1px solid #eee; border-radius: 5px; overflow: hidden; transition:all .5s; margin-right: 17px;}
+.baoxian-slideTxtBox .bd .baoxian-list-li:hover{ box-shadow: 5px 5px 5px #f1f1f1; transition:all .5s;}
+.baoxian-slideTxtBox .bd li a:hover{ color: #333;}
+.baoxian-slideTxtBox .bd li .plr20 { padding-left: 20px; padding-right: 20px;}
+.baoxian-slideTxtBox .bd li .plr20 h2{padding: 20px 0 10px 0;color: #333;font-size: 16px;text-align: center; margin: 3px 0;}
+.baoxian-slideTxtBox .bd li .plr20 em{display: block; width: 100%; background: url(../images/baoxian/bx-line.jpg) no-repeat; height: 17px; font-style: normal;
+    font-weight: 500;}
+.baoxian-slideTxtBox .bd li .plr20 li  {line-height: 24px; border:0; font-size: 14px;}
+.baoxian-slideTxtBox .bd ul li p {text-align: center; color: red; border-top: 1px solid #eee; height: 60px; line-height: 60px;}
+.baoxian-slideTxtBox .bd li .list{ padding-bottom: 20px;}
+.baoxian-slideTxtBox .bd ul li p .price{ font-size: 20px;}
+.baoxian-slideTxtBox .bd ul li p .sub-btn {font-size: 18px; display: none; border-radius: 5px; background: #fc8026; color: #fff; padding: 0 30px; margin-top: 15px; height: 40px; line-height: 40px;}
+
+.baoxian-icon {width: 36px; height: 36px; vertical-align: -0.59em; fill: currentColor; overflow: hidden;}
+
+
+
+
+
+
+
+
+
+
+
+
+/*end*/
