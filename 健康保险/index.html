@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>健康保险</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/css.css">
+	  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/Slide.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/iconfont.js" charset="utf-8"></script>
+</head>
+<body>
+    <div class="topBg">
+        <div class="top">
+            <span class="fl">您好！<a href="javascript:;">请登录</a>  <a href="javascript:;">免费注册</a></span>
+            <span class="fr"><a href="javascript:;">帮助中心</a> | <a href="javascript:;">联系我们</a></span>
+        </div>
+    </div>
+    <div class="header clearfix">
+        <div class="logo fl"></div>
+        <div class="search fl">
+            <input type="text" class="search-content fl" placeholder="请输入医院/科室/疾病/医生姓名 ">
+            <!--<a href="javascript:;" class="search-btn fl">搜索</a>-->
+            <input type="button" value="搜索" class="search-button fl">
+            <div class="search-icon"></div>
+            <div class="clearfix"></div>
+            <div class="hot">
+                <a href="javascript:;">湿疹</a>
+                <a href="javascript:;">月经不调</a>
+                <a href="javascript:;" class="keyWord">上海长征医院</a>
+                <a href="javascript:;">鼻炎</a>
+                <a href="javascript:;">甲亢</a>
+                <a href="javascript:;" class="keyWord">儿科</a>
+                <a href="javascript:;">上海交通大学附属瑞金医院</a>
+            </div>
+        </div>
+        <div class="slogon fl"></div>
+        <div class="clearfix"></div>
+        <div class="nav">
+            <ul>
+                <li><a href="javascript:;">预约挂号</a></li>
+                <li><a href="javascript:;">名医讲堂</a></li>
+                <li><a class="current" href="javascript:;">健康保险</a></li>
+                <li><span id="healthControl">健康商城
+                        <!--健康商城二级菜单-->
+                        <div class="health-dropdown mall-dropdown">
+                            <ul>
+                                <li><a class="hvr-buzz-out" href="javascript:;" target="_blank">健康顾问卡</a></li>
+                            </ul>
+                        </div>
+                    </span>
+                </li>
+                <li><a href="javascript:;">无忧陪诊</a></li>
+                <li><a href="javascript:;">健康海淘</a></li>
+                <li><a href="javascript:;">医疗器械</a></li>
+
+                <script type="text/javascript">
+                    $('#healthControl').hover(function(){
+                        $('.health-dropdown').stop().fadeToggle(300);
+                        $('#healthControl').toggleClass('healthControl-bg');
+                    })
+                </script>
+            </ul>
+        </div>
+        <div class="registration" >
+    		<a href="javasctipt:;" id="registration-toggle">
+                <div class="registration-title">快速挂号</div>
+                <div class="registration-main registration-main2">
+                    <form action="">
+                        <p>按医院查找</p>
+                        <input type="text" placeholder="请输入医院名称">
+                        <p>按疾病查找</p>
+                        <input type="text" placeholder="请输入疾病名称">
+                    </form>
+                    <!--<a href="javascript:;" class="registration-btn hvr-float">免费预约</a>-->
+                    <input type="button" value="免费预约" class="registration-button hvr-float">
+                    <div class="registration-img"></div>
+                </div>
+            </a>
+		</div>
+        <!--快速挂号显示隐藏-->
+        <script type="text/javascript">
+    		$('#registration-toggle').hover(function(){
+	  			$('.registration-main').stop().fadeToggle(200);
+    			$('.registration').toggleClass('registration2');
+    		})
+        </script>
+    </div>
+
+	<div class="fullSlide baoxian-fullSlide">
+    <div class="bd">
+      <ul><li style="background:url(images/baoxian/banner.jpg) top center no-repeat;"></li></ul>
+    </div>
+  </div>
+
+  <div class="baoxian">
+    <div class="baoxian-slideTxtBox">
+			<div class="hd">
+				<ul>
+          <li>
+            <svg class="baoxian-icon" aria-hidden="true">
+              <use xlink:href="#icon-yibaoqia1"></use>
+            </svg>
+            医保卡可购险种
+          </li>
+          <li>
+            <svg class="baoxian-icon" aria-hidden="true">
+              <use xlink:href="#icon-baoxian"></use>
+            </svg>
+            非医保卡购买险种
+          </li>
+        </ul>
+			</div>
+			<div class="bd" style="padding-top:10px;">
+				<ul class="clearfix">
+					<li class="baoxian-list-li">
+					  <a class="baoxian-bd-list" href="javascript:;" target="_blank">
+              <img src="images/baoxian/baoxian-pic1.jpg">
+              <div class="plr20">
+                <h2>上海医保账户住院自费医疗保险</h2>
+                <em></em>
+                <ul class="pl20 list clearfix">
+                  <li><strong>·</strong>　首款覆盖老年人群的住院自费费用</li>
+                  <li><strong>·</strong>　自费50%比例赔付</li>
+                  <li><strong>·</strong>　16周岁-至65周岁均可保</li>
+                </ul>
+                <p>
+                  <span class="price"> ¥?元 </span>
+                  <span class="sub-btn">立即投保</span>
+                </p>
+              </div>
+					  </a>
+					</li>
+          <li class="baoxian-list-li">
+					  <a class="baoxian-bd-list" href="javascript:;" target="_blank">
+              <img src="images/baoxian/baoxian-pic2.jpg">
+              <div class="plr20">
+                <h2>上海医保账户重大疾病保险</h2>
+                <em></em>
+                <ul class="pl20 list clearfix">
+                  <li><strong>·</strong>　保费大幅低于市场同类产品价格</li>
+                  <li><strong>·</strong>　包含45种重大疾病</li>
+                  <li><strong>·</strong>　16周岁-至65周岁均可保</li>
+                </ul>
+                <p>
+                  <span class="price"> ¥?元 </span>
+                  <span class="sub-btn">立即投保</span>
+                </p>
+              </div>
+					  </a>
+					</li>
+				</ul>
+				<ul class="clearfix">
+          <li class="baoxian-list-li">
+					  <a class="baoxian-bd-list" href="javascript:;" target="_blank">
+              <img src="images/baoxian/baoxian-pic3.jpg">
+              <div class="plr20">
+                <h2>尊享e生医疗险</h2>
+                <em></em>
+                <ul class="pl20 list clearfix">
+                  <li><strong>·</strong>　保险高达600万，癌症无免赔</li>
+                  <li><strong>·</strong>　0-60岁可投保，可续保至80岁</li>
+                  <li><strong>·</strong>　100%赔付，不限社保</li>
+                </ul>
+                <p>
+                  <span class="price"> ¥?元 </span>
+                  <span class="sub-btn">立即投保</span>
+                </p>
+              </div>
+					  </a>
+					</li>
+          <li class="baoxian-list-li">
+					  <a class="baoxian-bd-list" href="javascript:;" target="_blank">
+              <img src="images/baoxian/baoxian-pic4.jpg">
+              <div class="plr20">
+                <h2>尊享e医生百万医疗险</h2>
+                <em></em>
+                <ul class="pl20 list clearfix">
+                  <li><strong>·</strong>　100万住院医疗，200万癌症组员医疗</li>
+                  <li><strong>·</strong>　人权覆盖广，30天-60周岁均可保</li>
+                  <li><strong>·</strong>　均可赔（进口药、自费药等）</li>
+                </ul>
+                <p>
+                  <span class="price"> ¥?元 </span>
+                  <span class="sub-btn">立即投保</span>
+                </p>
+              </div>
+					  </a>
+					</li>
+          <li class="baoxian-list-li">
+					  <a class="baoxian-bd-list" href="javascript:;" target="_blank">
+              <img src="images/baoxian/baoxian-pic5.jpg">
+              <div class="plr20">
+                <h2>个人综合意外险</h2>
+                <em></em>
+                <ul class="pl20 list clearfix">
+                  <li><strong>·</strong>　意外风险全保障，超百万高保额</li>
+                  <li><strong>·</strong>　一次投保，全年无忧</li>
+                  <li><strong>·</strong>　65岁也能保，100%赔付</li>
+                </ul>
+                <p>
+                  <span class="price"> ¥?元 </span>
+                  <span class="sub-btn">立即投保</span>
+                </p>
+              </div>
+					  </a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">jQuery(".baoxian-slideTxtBox").slide();</script>
+    <script type="text/javascript">
+      $('.baoxian-bd-list').hover(function() {
+        $(this).find('.price').css('display', 'none');
+        $(this).find('.sub-btn').css('display', 'block');
+      }, function() {
+        $(this).find('.price').css('display', 'block');
+        $(this).find('.sub-btn').css('display', 'none');
+      });
+    </script>
+  </div>
+
+    <div class="sidebar">
+        <ul>
+            <li>
+                <a href="javascript:;" class="sidebar-app">
+                    <img src="images/sidebar01.png" alt="">
+                    <div class="sidebarAppShow">
+                        <img src="images/app.jpg" alt="">
+                        <p>扫一扫</p>
+                        <p>助医网官方APP</p>
+                        <p>掌握更新健康产品信息</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="sidebar-weixin">
+                    <img src="images/sidebar02.png" alt="">
+                    <div class="sidebarWeixinShow">
+                        <img src="images/weixin.png" alt="">
+                        <p>扫一扫</p>
+                        <p>助医网官方微信</p>
+                        <p>掌握更新健康产品信息</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="sidebar-phone">
+                    <img src="images/sidebar03.png" alt="">
+                    <div class="sidebarPhoneShow">
+                        <img src="images/phone.png" alt="">
+                        <h2>96567575</h2>
+                        <p>免费预约热线</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="sidebar-service">
+                    <img src="images/sidebar04.png" alt="">
+                    <div class="sidebarServiceShow">
+                        <img src="images/service.png" alt="">
+                        <p></p>
+                        <p>点击</p>
+                        <p>进入在线咨询</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <div class="foot">
+            <a href="javascript:;">关于我们</a>|
+            <a href="javascript:;">免责条款</a>|
+            <a href="javascript:;">联系我们</a>|
+            <a href="javascript:;">加入我们</a>
+        </div>
+        <p>Copyright @ 2016   www.91985.com   All Rights Reserved <br>
+            上海助医网信息网络有限公司    助医网     版权所有    沪ICP备06037383号<br>
+            未经书面授权  禁止复制或建立镜像    本网站的信息仅供参考，不能作为诊断和医疗的依据。
+        </p>
+        <div class="friendLink">
+            <a href="javascript:;">
+                <span class="friendLink01"></span>
+                <P>东方网</P>
+            </a>
+            <a href="javascript:;">
+                <span class="friendLink02"></span>
+                <P>上海市互联网协会</P>
+            </a>
+            <a href="javascript:;">
+                <span class="friendLink03"></span>
+                <P>上海市卫计委</P>
+            </a>
+        </div>
+        <!--站长统计20161216-->
+        <div class="clearfix"></div>
+        <a href="javascript:;" class="statistics">站长统计</a>
+    </div>
+
+    <script>
+        /* jQuery placeholder, fix for IE6,7,8,9 */
+        $(document).ready(function(){
+            var doc=document,
+                    inputs=doc.getElementsByTagName('input'),
+                    supportPlaceholder='placeholder'in doc.createElement('input'),
+
+                    placeholder=function(input){
+                        var text=input.getAttribute('placeholder'),
+                                defaultValue=input.defaultValue;
+                        if(defaultValue==''){
+                            input.value=text
+                        }
+                        input.onfocus=function(){
+                            if(input.value===text)
+                            {
+                                this.value=''
+                            }
+                        };
+                        input.onblur=function(){
+                            if(input.value===''){
+                                this.value=text
+                            }
+                        }
+                    };
+
+            if(!supportPlaceholder){
+                for(var i=0,len=inputs.length;i<len;i++){
+                    var input=inputs[i],
+                            text=input.getAttribute('placeholder');
+                    if(input.type==='text'&&text){
+                        placeholder(input)
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

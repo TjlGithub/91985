@@ -1,0 +1,248 @@
+/**
+ * fullPage 2.4.6
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    font-family: "Microsoft Yahei";
+    /*Avoid flicker on slides transitions for mobile phones #336 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+#superContainer {
+    height: 100%;
+    position: relative;
+
+    /* Touch detection for Windows 8 */
+    -ms-touch-action: none;
+
+    /* IE 11 on Windows Phone 8.1*/
+    touch-action: none;
+}
+.fp-section {
+    position: relative;
+    -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
+    -moz-box-sizing: border-box; /* <=28 */
+    box-sizing: border-box;
+}
+.fp-slide {
+    float: left;
+}
+.fp-slide, .fp-slidesContainer {
+    height: 100%;
+    display: block;
+}
+.fp-slides {
+    z-index:1;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out; /* Safari<=6 Android<=4.3 */
+    transition: all 0.3s ease-out;
+}
+.fp-section.fp-table, .fp-slide.fp-table {
+    display: table;
+    table-layout:fixed;
+    width: 100%;
+}
+.fp-tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+.fp-slidesContainer {
+    float: left;
+    position: relative;
+}
+.fp-controlArrow {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -38px;
+}
+.fp-controlArrow.fp-prev {
+    left: 15px;
+    width: 0;
+    border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent #fff transparent transparent;
+}
+.fp-controlArrow.fp-next {
+    right: 15px;
+    border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #fff;
+}
+.fp-scrollable {
+    overflow: scroll;
+
+}
+.fp-notransition {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+#fp-nav {
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+}
+#fp-nav.right {
+    right: 17px;
+}
+#fp-nav.left {
+    left: 17px;
+}
+.fp-slidesNav{
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    opacity: 1;
+}
+.fp-slidesNav.bottom {
+    bottom: 17px;
+}
+.fp-slidesNav.top {
+    top: 17px;
+}
+#fp-nav ul,
+.fp-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+#fp-nav ul li,
+.fp-slidesNav ul li {
+    display: block;
+    width: 13px;
+    height: 13px;
+    margin-bottom: 16PX;
+    position:relative;
+}
+.fp-slidesNav ul li {
+    display: inline-block;
+}
+#fp-nav ul li a,
+.fp-slidesNav ul li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span {
+    background: #267ed4;
+    border:3px solid #fff;
+    margin-left: -1px;
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    top: 6px;
+    left: -24px;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #d3d3d3;
+    background: rgba(255,255,255,1);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+#fp-nav ul li .fp-tooltip {
+    position: absolute;
+    top: -2px;
+    color: #fff;
+    font-size: 14px;
+    font-family: arial, helvetica, sans-serif;
+    white-space: nowrap;
+    max-width: 220px;
+    overflow: hidden;
+    display: block;
+    opacity: 0;
+    width: 0;
+}
+#fp-nav ul li:hover .fp-tooltip {
+    -webkit-transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
+    width: auto;
+    opacity: 1;
+}
+#fp-nav ul li .fp-tooltip.right {
+    right: 20px;
+}
+#fp-nav ul li .fp-tooltip.left {
+    left: 20px;
+}
+
+#menu { margin: 0; padding: 0; list-style-type: none; z-index: 70; float: right;}
+#menu li { float: left;  font-size: 14px; font-weight: bold;}
+#menu li i{ position: absolute; top: 18px; left: 30px; display: inline-block; width: 22px; height: 21px; background: url(../images/icons.png) no-repeat;}
+/*#menu li.p1 i{ background-position: 0 0;}*/
+#menu li.active i{ background-position: -38px 0;}
+#menu li.p1 i.cur{ background-position: -38px 0;}
+#menu li.p2 i{ background-position: 0 -21px;}
+#menu li.p2 i.cur{ background-position: -38px -21px;}
+#menu li.p3 i{ background-position: 0 -42px;}
+#menu li.p3 i.cur{ background-position: -38px -42px;}
+#menu li.p4 i{ background-position: 0 -63px;}
+#menu li.p4 i.cur{ background-position: -38px -63px;}
+#menu li.p5 i{ background-position: 0 -84px;}
+#menu li.p5 i.cur{ background-position: -38px -84px;}
+#menu li.p6 i{ background-position: 0 -105px;}
+#menu li.p6 i.cur{ background-position: -38px -105px;}
+#menu a { float: left; display: block; width: 150px; height: 60px; line-height: 60px; text-align: left; text-indent: 60px; background-color: #f9fbfc; color: #999; text-decoration: none; position: relative;}
+#menu .active a { color: #fff; background-color: #267ed4;}
+.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff; position: relative;}
+.bg1{ background: url(../images/1.jpg) center;}
+.bg2{ background: url(../images/2.jpg) center;}
+.bg3{ background: url(../images/3.jpg) center;}
+.bg4{ background: url(../images/4.jpg) center;}
+.bg5{ background: url(../images/5.jpg) center;}
+.bg6{ background: url(../images/6.jpg) center;}
+
+.top{ width: 100%; height: 60px; background: #f9fbfc; position: fixed; top: 0; left: 0; z-index: 70;}
+.top .logo{ float: left; margin-left: 5.829%;}
+.top .logo img{ width: 201px; height: 60px; }
+
+.p1-1{ width: 48.4385%; left: 5.7598%; top: 21.7513%; position: absolute;}
+.p1-2{ width: 32.0610%; right: 8.3275%; top: 16.8918%; position: absolute;}
+.p1-3{ display: block; width: 12.6301%; right: 19.9861%; top: 71.7948%; position: absolute;}
+
+.p2-1{ width: 27.9666%; left: 12.9077%; top: 21.0810%; position: absolute;}
+.p2-2{ width: 44.4829%; right: 11.5197%; top: 16.4864%; position: absolute;}
+
+.p3-1{ width: 84.5940%; left: 0%; top: 0%; position: absolute;}
+
+.p4-1{ width: 44.6911%; left: 12.9077%; top: 30.6756%; position: absolute;}
+.p4-2{ width: 27.6891%; right: 13.3240%; top: 27.9729%; position: absolute;}
+
+.p5-1{ width: 70.5065%; left: 14.9895%; top: 26.8918%; position: absolute;}
+.p5-2{ width: 52.9493%; right: 23.3865%; top: 68.1081%; position: absolute;}
+
+.p6-1{ width: 30.0485%; left: 16.6551%; top: 23.1081%; position: absolute;}
+.p6-2{ width: 5.06592%; right: 48.4385%; top: 49.4594%; position: absolute;}
+.p6-3{ width: 30.3955%; right: 18.1124%; top: 23.1081%; position: absolute;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*end*/

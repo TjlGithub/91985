@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<title>天宏商城</title>
+	<meta name="keywords" content="天宏商城,天宏轴承,轴承" />
+	<meta name="description" content="天宏商城,天宏轴承,轴承" />
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		$(function() {
+			$('#dowebok').fullpage({
+				anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+				menu: '#menu',
+				'navigation': true,
+				scrollBar: true,
+		      	afterRender: function(){
+		            wow = new WOW({
+		    	        animateClass: 'animated',
+			        });
+			        wow.init();
+			     }
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="top">
+		<div class="logo"><img src="images/logo.jpg" alt=""></div>
+		<ul id="menu">
+			<li class="p1 active" data-menuanchor="page1"><a href="#page1"><i></i>天宏商城</a></li>
+			<li class="p2" data-menuanchor="page2"><a href="#page2"><i></i>扫码关注</a></li>
+			<li class="p3" data-menuanchor="page3"><a href="#page3"><i></i>企业介绍</a></li>
+			<li class="p4" data-menuanchor="page4"><a href="#page4"><i></i>企业理念</a></li>
+			<li class="p5" data-menuanchor="page5"><a href="#page5"><i></i>企业优势</a></li>
+			<li class="p6" data-menuanchor="page6"><a href="#page6"><i></i>联系我们</a></li>
+		</ul>
+		<script type="text/javascript">
+			$('#menu li a').click(function() {
+				$(this).find('i').addClass('cur');
+				$(this).parent('li').siblings('li').find('i').removeClass('cur');
+			});
+		</script>
+	</div>
+
+
+
+	<div id="dowebok">
+		<div class="section bg1">
+			<img class="p1-1 wow rollIn" src="images/p1-1.png" alt="">
+			<img class="p1-2 wow rollIn" src="images/p1-2.png" alt="">
+			<a class="p1-3 wow rollIn" href="http://123.206.194.46/Buyweb">
+				<img src="images/p1-3.png" alt="">
+			</a>
+		</div>
+		<div class="section bg2">
+			<img class="p2-1 wow bounceInLeft" src="images/p2-1.png" alt="">
+			<img class="p2-2 wow bounceInRight" src="images/p2-2.png" alt="">
+		</div>
+		<div class="section bg3">
+			<img class="p3-1 wow bounceInDown" src="images/p3-1.png" data-wow-delay="0.3s" alt="">
+		</div>
+		<div class="section bg4">
+			<img class="p4-1 wow fadeInLeft" src="images/p4-1.png" alt="">
+			<img class="p4-2 wow fadeInRight" src="images/p4-2.png" alt="">
+		</div>
+		<div class="section bg5">
+			<img class="p5-1 wow bounceInDown" src="images/p5-1.png" alt="">
+			<img class="p5-2 wow bounceInUp" src="images/p5-2.png" alt="">
+		</div>
+		<div class="section bg6">
+			<img class="p6-1 wow flipInY" src="images/p6-1.png" alt="">
+			<img class="p6-2 wow flipInY" src="images/p6-2.png" data-wow-delay="0.4s" alt="">
+			<img class="p6-3 wow flipInY" src="images/p6-3.png" data-wow-delay="0.8s" alt="">
+		</div>
+	</div>
+	<script>new WOW().init();</script>
+</body>
+
+</html>

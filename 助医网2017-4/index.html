@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>助医网</title>
+    <link rel="stylesheet" href="css/css.css">
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/Slide.js"></script>
+    <style type="text/css">
+    .search-content{width:375px; height: 38px; line-height: 38px; border:3px solid #00be86; border-radius: 5px; text-indent: 8px; outline: none;}
+    .registration-main{ width:260px; padding-left: 30px; width: 230px!important; height: 350px; padding-top: 40px; height: 310px!important; background:rgba(255,255,255,0.8)!important; background: #fff; filter:alpha(opacity=80); *margin-top: 2px; }
+    </style>
+</head>
+<body>
+    <div class="topBg">
+        <div class="top">
+            <span class="fl">您好！<a href="javascript:;">请登录</a>  <a href="javascript:;">免费注册</a></span>
+            <span class="fr"><a href="javascript:;">帮助中心</a> | <a href="javascript:;">联系我们</a></span>
+        </div>
+    </div>
+    <div class="header clearfix">
+        <div class="logo fl"></div>
+        <div class="search fl">
+            <input type="text" class="search-content fl" placeholder="请输入医院/科室/疾病/医生姓名 ">
+            <!--<a href="javascript:;" class="search-btn fl">搜索</a>-->
+            <input type="button" value="搜索" class="search-button fl">
+            <div class="search-icon"></div>
+            <div class="clearfix"></div>
+            <div class="hot">
+                <a href="javascript:;" class="keyWord">中山医院</a>
+                <a href="javascript:;">长征医院</a>
+                <a href="javascript:;">第九人民医院</a>
+                <a href="javascript:;">上海市中医医院</a>
+                <a href="javascript:;" class="keyWord">肝肿瘤</a>
+                <a href="javascript:;">高血压</a>
+                <a href="javascript:;">消化科</a>
+            </div>
+        </div>
+        <div class="slogon fl"></div>
+        <div class="clearfix"></div>
+        <div class="nav">
+            <ul>
+                <li><a class="current" href="javascript:;">预约挂号</a></li>
+                <li><a href="javascript:;">名医讲堂</a></li>
+                <li><span id="healthControl">健康管理
+                		<!--健康管理二级菜单-->
+                		<!--<i class="arrow-down"></i>-->
+				        <div class="health-dropdown">
+				        	<ul>
+				        		<li><a class="hvr-buzz-out" href="javascript:;" target="_blank">健康保险</a></li>
+				        		<li><a class="hvr-buzz-out" href="javascript:;" target="_blank">健康顾问卡</a></li>
+				        	</ul>
+				        </div>
+                	</span>
+                </li>
+                <li><a href="javascript:;">健康商城</a></li>
+                <li><a href="javascript:;">无忧陪诊</a></li>
+                <li><a href="javascript:;">健康海淘</a></li>
+                <li><a href="javascript:;">医疗器械</a></li>
+
+                <script type="text/javascript">
+		        	$('#healthControl').hover(function(){
+		        		$('.health-dropdown').stop().fadeToggle(300);
+		        		$('#healthControl').toggleClass('healthControl-bg');
+//		        		$('.arrow-down').toggleClass('arrow-down2');
+		        	})
+		        </script>
+            </ul>
+        </div>
+
+        <div class="registration">
+                <div class="registration-title">快速挂号</div>
+                <div class="registration-main">
+                    <form action="">
+                        <p>按医院查找</p>
+                        <input type="text" placeholder="请输入医院名称">
+                        <p>按疾病查找</p>
+                        <input type="text" placeholder="请输入疾病名称">
+                    </form>
+                    <!--<a href="javascript:;" class="registration-btn hvr-float">免费预约</a>-->
+                    <input type="button" value="免费预约" class="registration-button hvr-float">
+                    <div class="registration-img"></div>
+                </div>
+
+        </div>
+    </div>
+
+    <div class="fullSlide">
+        <div class="bd">
+            <ul>
+                <li style="background:url(images/banner.jpg) top center no-repeat;">
+                    <a href="javascript:;" target="_blank"></a>
+                </li>
+                <li style="background:url(images/banner2.jpg) top center no-repeat;">
+                    <a href="javascript:;" target="_blank"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="hd"><ul></ul></div>
+    </div>
+    <script type="text/javascript">
+        jQuery(".fullSlide").slide({ titCell:".hd ul", mainCell:".bd ul", effect:"fade", delayTime:1000, interTime:5000, autoPlay:true, autoPage:true, trigger:"click" });
+    </script>
+
+    <div class="sidebar">
+        <ul>
+            <li>
+                <a href="javascript:;" class="sidebar-app">
+                    <img src="images/sidebar01.png" alt="">
+                    <div class="sidebarAppShow">
+                        <img src="images/app.jpg" alt="">
+                        <p>扫一扫</p>
+                        <p>助医网官方APP</p>
+                        <p>掌握更新健康产品信息</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="sidebar-weixin">
+                    <img src="images/sidebar02.png" alt="">
+                    <div class="sidebarWeixinShow">
+                        <img src="images/weixin.png" alt="">
+                        <p>扫一扫</p>
+                        <p>助医网官方微信</p>
+                        <p>掌握更新健康产品信息</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="sidebar-phone">
+                    <img src="images/sidebar03.png" alt="">
+                    <div class="sidebarPhoneShow">
+                        <img src="images/phone.png" alt="">
+                        <h2>96567575</h2>
+                        <p>免费预约热线</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="sidebar-service">
+                    <img src="images/sidebar04.png" alt="">
+                    <div class="sidebarServiceShow">
+                        <img src="images/service.png" alt="">
+                        <p></p>
+                        <p>点击</p>
+                        <p>进入在线咨询</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="ad">
+      <ul>
+        <li>
+          <a href="javascript:;" class="guangshu">
+            <img src="images/ad.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;" class="guangshu">
+            <img src="images/ad.jpg" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="icon-six">
+        <div class="icon-six-main">
+            <ul id="UlList">
+                <li>
+                    <a href="javascript:;" class="hvr-forward">
+                        <div class="icon-six-01"></div>
+                        <p>预约挂号</p>
+                        <span>免费预约挂号</span>
+                    </a>
+                </li>
+                 <li>
+                    <a href="javascript:;" class="hvr-forward">
+                        <div class="icon-six-06"></div>
+                        <p>名医讲堂</p>
+                        <span>名医在线讲堂</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="hvr-forward">
+                        <div class="icon-six-08"></div>
+                        <p>健康保险</p>
+                        <span>医疗、住院、重疾</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="hvr-forward">
+                        <div class="icon-six-05"></div>
+                        <p>医疗器械</p>
+                        <span>医疗器械租赁</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="hvr-forward">
+                        <div class="icon-six-02"></div>
+                        <p>无忧陪诊</p>
+                        <span>专人专享陪护</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://118.178.229.106/home/kaxinzhe/index.php" class="hvr-forward">
+                        <div class="icon-six-07"></div>
+                        <p>健康商城</p>
+                        <span>海选商品</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="hvr-forward">
+                        <div class="icon-six-03"></div>
+                        <p>健康海淘</p>
+                        <span>100%正品直邮</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="hvr-forward">
+                        <div class="icon-six-04"></div>
+                        <p>360好药</p>
+                        <span>药真、药实惠</span>
+                    </a>
+                </li>
+              </ul>
+            <!-- <script type="text/javascript">
+                window.onload = function urlborder() {
+                    var listr = document.getElementById("UlList").getElementsByTagName('li');
+                    for (var i = 0; i < listr.length; i++) {
+                        if (i == listr.length - 1) {
+                            listr[i].style.borderWidth = "0";
+                        }
+                    }
+                }
+            </script> -->
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="foot">
+            <a href="javascript:;">关于我们</a>|
+            <a href="javascript:;">免责条款</a>|
+            <a href="javascript:;">联系我们</a>|
+            <a href="javascript:;">加入我们</a>
+        </div>
+        <p>Copyright @ 2016   www.91985.com   All Rights Reserved <br>
+            上海助医信息网络有限公司    助医网     版权所有    沪ICP备06037383号<br>
+            未经书面授权  禁止复制或建立镜像    本网站的信息仅供参考，不能作为诊断和医疗的依据。
+        </p>
+        <div class="friendLink">
+            <a href="javascript:;">
+                <span class="friendLink01"></span>
+                <P>东方网</P>
+            </a>
+            <a href="javascript:;">
+                <span class="friendLink02"></span>
+                <P>上海市互联网协会</P>
+            </a>
+            <a href="javascript:;">
+                <span class="friendLink03"></span>
+                <P>上海市卫计委</P>
+            </a>
+        </div>
+        <!--站长统计20161216-->
+        <div class="clearfix"></div>
+        <a href="javascript:;" class="statistics">站长统计</a>
+    </div>
+
+    <script>
+        /* jQuery placeholder, fix for IE6,7,8,9 */
+        $(document).ready(function(){
+            var doc=document,
+                    inputs=doc.getElementsByTagName('input'),
+                    supportPlaceholder='placeholder'in doc.createElement('input'),
+
+                    placeholder=function(input){
+                        var text=input.getAttribute('placeholder'),
+                                defaultValue=input.defaultValue;
+                        if(defaultValue==''){
+                            input.value=text
+                        }
+                        input.onfocus=function(){
+                            if(input.value===text)
+                            {
+                                this.value=''
+                            }
+                        };
+                        input.onblur=function(){
+                            if(input.value===''){
+                                this.value=text
+                            }
+                        }
+                    };
+
+            if(!supportPlaceholder){
+                for(var i=0,len=inputs.length;i<len;i++){
+                    var input=inputs[i],
+                            text=input.getAttribute('placeholder');
+                    if(input.type==='text'&&text){
+                        placeholder(input)
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

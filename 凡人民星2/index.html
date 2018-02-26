@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <script src="js/flexible.js"></script>
+  <script src="js/wow.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/css.css">
+  <title>凡人民星</title>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="cloud">
+      <img src="images/cloud.png" alt="">
+    </div>
+    <div class="logo wow animatecss zoomInUp">
+      <img src="images/logo.png" alt="">
+    </div>
+
+
+    <div class="video wow animatecss fadeInDown">
+      <video class="video" src="images/凡人民星0726.mp4" autoplay poster="images/video.png"></video>
+    </div>
+
+    <div class="title font34 wow animatecss fadeIn">
+      1.为什么举办评选活动？
+    </div>
+    <div class="content font30 wow animatecss fadeIn">
+      通过评选活动，在闵行党建引领社会治理工作中挖掘出善于带动、借助团队力量的骨干，汲取平凡力量，传递闵行梦想，使更多人成为引领正能量的“风向标”，携手同心，共促闵行发展。
+    </div>
+
+    <div class="title font34 wow animatecss fadeInLeft">
+      2.要选出什么样的人？
+    </div>
+    <div class="content font30 wow animatecss fadeInRight">
+      本届评选范围为工作生活在闵行的人。应具备以下特质：<br /> 1、与党同心、与国同行，有实现美好生活的向往和追求；
+      <br /> 2、在“美丽家园”、“美丽乡村”、“邻里中心建设”以及“创全”中发挥积极作用；
+      <br /> 3、有带领团队助推发展的领导力和魅力；
+      <br /> 4、服务企业、社会的成功实践，获得他人的广泛认同、支持和效仿。
+    </div>
+
+    <div class="title font34 wow animatecss fadeInLeft">
+      3.如何成为凡人民星？
+    </div>
+    <div class="content font30 wow animatecss fadeInRight" style="word-break:break-all;">
+      评选分为报名、海选、网络投票和终审四个环节，最终评选出10名左右闵行“凡人•民星”群众骨干，要成为其中的一员，您需要经过以下努力：<br /><br /> 报名:填写下方基本信息后，点击“我要报名”，下载报名表，并在8月25日前发送至mhfrmx3@163.com邮箱。
+      <br /><br /> 现场评估：由专家、前两届“凡人民星”以及群众代表组成大众观察团，走访候选人所在企业、社区。
+    </div>
+    <form style="padding-top:1rem;" action="#" id="form1">
+     <!--  <p class="tips font34">您已成功报名!</p>
+      <p class="tips tips2 font32">请点击下方“下载报名信息表”，填写基本信息，发送到指定邮箱：mhfrmx3@163.com，谢谢！
+</p> -->
+      <div class="form-group clearfix name">
+        <label class="font32 fl">姓名：</label>
+        <div class="form-input fl">
+           <input class="font32 in-v" type="text" name="userName" validate='[{"type":"notNull","msg":"姓名不能为空！"},{"type":"regex","reg":"^[\u4e00-\u9fa5]{2,9}$","msg":"请填写正确姓名"}]'/>
+        </div>
+      </div>
+      <!-- <div class="form-group clearfix">
+        <label class="font32 fl">身份证号：</label>
+        <div class="form-input fl">
+          <input class="font32" type="number" name="" value="">
+        </div>
+      </div> -->
+      <div class="form-group clearfix phone">
+        <label class="font32 fl">手机：</label>
+        <div class="form-input fl">
+           <input class="font32 in-v" type="number" name="phone" validate='[{"type":"regex","reg":"^(1+[34578][0-9]{9})$","msg":"手机号码不符合规范!"}]' />
+        </div>
+      </div>
+      <div class="form-group clearfix email">
+        <label class="font32 fl">邮箱：</label>
+        <div class="form-input fl">
+          <input class="font32 in-v" type="text" name="email" validate='[{"type":"regex","reg":"^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+$","msg":"邮箱不符合规范!"}]' />
+        </div>
+      </div>
+      <!-- <div class="form-group clearfix">
+        <label class="font32 fl">工作单位：</label>
+        <div class="form-input fl">
+          <input class="font32" type="text" name="" value="">
+        </div>
+      </div>
+      <div class="form-group form-group2 clearfix">
+        <label class="font32 fl">单位地址：闵行区</label>
+        <div class="form-input fl">
+          <input class="font32" type="text" name="" value="">
+        </div>
+        <span class="font32 fl">（街镇）</span>
+      </div>
+      <div class="form-group clearfix">
+        <label class="font32 fl">具体地址：</label>
+        <div class="form-input form-input2 fl">
+          <input class="font32" type="text" name="" value="">
+        </div>
+      </div>
+      <div class="form-group form-group2 form-how clearfix">
+        <label class="font32 fl">如何知晓活动？</label>
+        <label><input  name="how" type="radio" value="" />朋友告知</label>
+        <label><input name="how" type="radio" value="" />单位告知</label>
+        <label><input name="how" type="radio" value="" />海报</label>
+        <label><input name="how" type="radio" value="" />网络</label>
+        <label><input name="how" type="radio" value="" />微信</label>
+        <label><input name="how" type="radio" value="" />其它</label>
+      </div> -->
+    </form>
+
+    <a id="wybm"  class="btn btn2 font32 wow animatecss fadeIn">我要报名</a>
+    <!-- <p class="tip font24 wow animatecss fadeIn">（本次报名截止至2017年7月15日）</p> -->
+  </div>
+  <script>
+    new WOW().init();
+  </script>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.validate.js"></script>
+  <script type="text/javascript">
+    $(function(){
+        $("#form1").validate();
+    });
+  </script>
+</body>
+
+</html>

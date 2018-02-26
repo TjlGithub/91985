@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <script src="js/flexible.js"></script>
+  <script src="js/iconfont.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="css/css.css">
+  <title>惠健康</title>
+</head>
+
+<body>
+  <div class="wrap">
+    <img src="images/banner.jpg" alt="">
+    <ul>
+      <li>
+        <a id="goToUrl" class="icon0 icon01" href="javascript:;">
+        <span class="icons-index icon1">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-guahao"></use>
+          </svg>
+          <i class="font30">预约挂号</i>
+        </span>
+      </a>
+      </li>
+      <li>
+        <a class="icon0 icon02" href="名医讲堂.html">
+        <span class="icons-index icon2">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-mingyijiangzuo"></use>
+          </svg>
+          <i class="font30">名医讲堂</i>
+        </span>
+      </a>
+      </li>
+      <li>
+        <a class="icon0 icon03" href="http://health.eastday.com/health/newzyw/n29/index_K37.html">
+        <span class="icons-index icon3">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-news-copy"></use>
+          </svg>
+          <i class="font30">健康资讯</i>
+        </span>
+      </a>
+      </li>
+      <li>
+        <a class="icon0 icon04" href="http://www.91985.com/users/wx/consult/index.do">
+        <span class="icons-index icon4">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-consult"></use>
+          </svg>
+          <i class="font30">健康咨询</i>
+        </span>
+      </a>
+      </li>
+      <li>
+        <a class="icon0 icon05" href="http://weixin.shkeylab-mh.org/health_weathers">
+        <span class="icons-index icon5">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-fengxian"></use>
+          </svg>
+          <i class="font30">疾病风险</i>
+        </span>
+      </a>
+      </li>
+      <li>
+        <a class="icon0 icon06" href="http://weixin.shkeylab-mh.org/life_weathers">
+        <span class="icons-index icon6">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-zhishu"></use>
+          </svg>
+          <i class="font30">生活指数</i>
+        </span>
+      </a>
+      </li>
+    </ul>
+    <img class="foot" src="images/foot.png" alt="">
+  </div>
+  <div id="fullScreen">
+    <img src="images/fullBg.jpg" alt="">
+    <div id="time" class="font32"></div>
+  </div>
+
+  <script type="text/javascript">
+    var goToUrl = document.getElementById('goToUrl');
+    var fs = document.getElementById('fullScreen');
+    var mun = 3;
+    var time = document.getElementById('time');
+    goToUrl.onclick = function() {
+      fs.style.display = 'block';
+       setInterval(updateNum, 1000);
+       //updateNum();
+       function updateNum(){
+       	time.innerHTML = mun--;
+           if(time.innerHTML<1){
+                window.location.href='http://www.91985.com/users/wx/doctor/index.do'
+           }
+       }
+      // setTimeout("window.location.href='http://www.91985.com/users/wx/doctor/index.do'", 1000);
+    }
+  </script>
+</body>
+
+</html>
